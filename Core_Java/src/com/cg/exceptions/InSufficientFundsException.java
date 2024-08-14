@@ -1,5 +1,5 @@
 package com.cg.exceptions;
 
-public class InSufficientFundsException  extends RuntimeException{
+public class InSufficientFundsException  extends Exception{
 
 }

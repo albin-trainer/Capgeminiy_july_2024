@@ -1,0 +1,29 @@
+package com.cg.jdbc;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class DBConnection {
+public static void main(String[] args) {
+	
+}
+
+static void dbConnection() {
+	String driverClass="com.mysql.cj.jdbc.Driver";
+	//http://ipaddress|domainname:portno
+	String url="jdbc:mysql://localhost:3307/cg_july_24";
+	String uname="root";
+	String password="root";
+	
+	try {
+		Class.forName(driverClass);
+		Connection con= DriverManager.getConnection(url, uname, password);
+	} catch (ClassNotFoundException e) {
+		e.printStackTrace();
+	} catch (SQLException e) {
+		e.printStackTrace();
+	}
+	
+}
+}

@@ -1,0 +1,16 @@
+package com.cg.jdbc;
+
+import java.sql.Connection;
+
+//DAO--> Data access object
+//usually the code which interact with DB
+public class EmployeeDao {
+public static void main(String[] args) {
+	
+}
+static void addNewEmployee(Employee e) {
+	//how we ll get Connection 
+	Connection con=DBConnection.dbConnection();
+	String sql="insert into employee values(?,?,?,?,?,?,?)";
+}
+}

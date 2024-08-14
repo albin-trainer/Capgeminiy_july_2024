@@ -1,0 +1,5 @@
+INDEX VERSION 1.132+D:\Albin\bckup\MY_WORK_SPACES\CGJuly_2024\.metadata\.plugins\org.eclipse.jdt.core
+3382121060.index
+3493321443.index
+117357414.index
+1865797976.index

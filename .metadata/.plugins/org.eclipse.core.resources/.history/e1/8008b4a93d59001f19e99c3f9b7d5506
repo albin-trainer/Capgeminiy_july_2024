@@ -1,0 +1,11 @@
+package com.cg.jdbc;
+//DAO--> Data access object
+//usually the code which interact with DB
+public class EmployeeDao {
+public static void main(String[] args) {
+	
+}
+static void addNewEmployee() {
+	
+}
+}

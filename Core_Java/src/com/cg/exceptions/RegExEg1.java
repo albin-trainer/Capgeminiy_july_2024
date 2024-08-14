@@ -30,6 +30,32 @@ public static void main(String[] args) {
 	System.out.println(b5);
 	
 	
+	String mobileNo="09134567809";//starts with 0 or 91 or +91
+	//and 1st digit shud from 6 to 9
+	String phoneNoRegex="(0|91|\\+91)?[6-9][0-9]{9}";
+	boolean b6=Pattern.matches(phoneNoRegex, mobileNo);
+	System.out.println(b6);
+	
+	String str="SPC01004PM";
+	
+	String regex1 = "SPC[0-9]{3}(0[0-9]|1[0-2])(AM|PM)";
+	
+	boolean b7 = Pattern.matches(regex1, str);
+	
+
+	if(b7==true) {
+		System.out.println(str+" is valid");
+	}
+	else {
+		System.out.println(str+" is not valid");
+	}
+	
+	
+	
+	
+	
+	
+	
 	
 }
 }
