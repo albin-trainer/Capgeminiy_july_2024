@@ -2,7 +2,13 @@
 <section name="Workbench">
 	<item key="org.eclipse.jdt.ui.last.selected.jre.kind2" value="2"/>
 	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="JavaSE-17"/>
-	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\ALBIN XAVIER\Downloads\mysql-connector-j-9.0.0\mysql-connector-j-9.0.0"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="D:\jars\hibernate_jpa jars-20231030T100614Z-001\hibernate_jpa jars"/>
+	<item key="org.eclipse.jdt.ui.last.selected.create.moduleinfo.comments" value="false"/>
+	<item key="org.eclipse.jdt.ui.last.selected.create.moduleinfo" value="false"/>
+	<item key="TypeHierarchyViewPart.hierarchyview" value="2"/>
+	<item key="TypeHierarchyViewPart.qualifiednames" value="false"/>
+	<item key="TypeHierarchyViewPart.linkeditors" value="false"/>
+	<item key="TypeHierarchyViewPart.orientation" value="3"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="2"/>
@@ -14,6 +20,7 @@
 	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item key="org.eclipse.jdt.ui.typecomment.deprecated" value="true"/>
+		<item key="EmptyDefaultAssistCategory" value="false"/>
 	</section>
 	<section name="NewClassWizardPage">
 		<item key="create_constructor" value="false"/>
@@ -90,5 +97,15 @@
 	</section>
 	<section name="BuildPathsPropertyPage">
 		<item key="pageIndex" value="3"/>
+	</section>
+	<section name="RefactoringWizard.preview">
+		<item key="width" value="600"/>
+		<item key="height" value="400"/>
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item key="renameSubpackages" value="false"/>
+		<item key="updateTextualMatches" value="false"/>
+		<item key="updateQualifiedNames" value="false"/>
+		<item key="patterns" value="*"/>
 	</section>
 </section>

@@ -3,6 +3,7 @@ package com.cg.jdbc;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
 
@@ -10,11 +11,41 @@ import java.time.LocalDate;
 //usually the code which interact with DB
 public class EmployeeDao {
 public static void main(String[] args) {
-	Employee e=new Employee(991, 
-			"Ayyappa", "Chicago", "ayyapa@gmail.com",
-			LocalDate.of(2022, 10,1), "Analyst", 100000);
+	//Employee e=new Employee(991, 
+		//	"Ayyappa", "Chicago", "ayyapa@gmail.com",
+		//	LocalDate.of(2022, 10,1), "Analyst", 100000);
 	
-	addNewEmployee(e);
+	//addNewEmployee(e);
+	Employee e=searchById(101);
+	if(e!=null)
+		System.out.println(e);
+	else
+		System.out.println("No records found !!!!");
+}
+static Employee searchById(int eid) {
+	Connection con=DBConnection.dbConnection();
+	String sql="select * from employee where eid=?";
+	try {
+		PreparedStatement pstmt=con.prepareStatement(sql);
+		pstmt.setInt(1, eid);
+		ResultSet rs=pstmt.executeQuery();
+		if(rs.next()) {
+			int id=rs.getInt("eid");
+			String name=rs.getString("empname");
+			String address=rs.getString("address");
+			String email=rs.getString("email");
+			String designation=rs.getString("designation");
+			Date doj=rs.getDate("doj");
+			float salary=rs.getFloat("salary");
+			Employee e= new Employee(id,name,address,email,doj.toLocalDate(),designation,salary);
+			return e;
+		}
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	return null;
+	
 }
 static void updateAddress(int eid,String newAddress) {
 	

@@ -83,4 +83,10 @@ public void setSalary(float salary) {
 	this.salary = salary;
 }
 
+@Override
+public String toString() {
+	return "Employee [eid=" + eid + ", empName=" + empName + ", address=" + address + ", email=" + email + ", doj="
+			+ doj + ", designation=" + designation + ", salary=" + salary + "]";
+}
+
 }
